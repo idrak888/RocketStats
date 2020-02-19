@@ -8,7 +8,7 @@ class APOD extends Component {
         imageLoaded: false
     }
     componentDidMount() {
-        axios.get('https://api.nasa.gov/planetary/apod?api_key=8PSnUUZqhJUxO62eO9TbYWjtLrbZq4hGpUJFC6MG')
+        axios.get('https://api.nasa.gov/planetary/apod?api_key=')
         .then(doc => {
             this.setState({image:doc.data});
         });
