@@ -7,7 +7,7 @@ class RoverPhotos extends Component {
         photos: []
     }
     componentDidMount() {
-        axios.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=8PSnUUZqhJUxO62eO9TbYWjtLrbZq4hGpUJFC6MG')
+        axios.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=')
         .then(doc => {
             this.setState({photos:doc.data.photos});
         });
