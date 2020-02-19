@@ -9,7 +9,7 @@ class Asteroids extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://api.nasa.gov/neo/rest/v1/feed?&api_key=8PSnUUZqhJUxO62eO9TbYWjtLrbZq4hGpUJFC6MG')
+        axios.get('https://api.nasa.gov/neo/rest/v1/feed?&api_key=')
         .then(doc => {
             var dates = [];
             for (let date in doc.data.near_earth_objects) {
